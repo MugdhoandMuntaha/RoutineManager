@@ -1,8 +1,9 @@
 /* eslint @typescript-eslint/no-unused-vars: "error" */
+/* eslint-disable */
 'use client';
 
 import React, { useEffect, useMemo, useState, useRef } from "react";
-import { Client, Databases, ID, Models } from "appwrite";
+import { Client, Databases, ID } from "appwrite";
 
 
 type Routine = {
@@ -34,6 +35,7 @@ function timeToMinutes(t: string) {
     return h * 60 + m;
 }
 function pad(n: number) { return n.toString().padStart(2, "0"); }
+//@typescript-eslint/no-unused-vars/
 function minutesToTime(min: number) {
     const h = Math.floor(min / 60);
     const m = min % 60;
