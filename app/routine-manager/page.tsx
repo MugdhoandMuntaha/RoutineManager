@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-unused-vars: "error" */
 'use client';
 
 import React, { useEffect, useMemo, useState, useRef } from "react";
