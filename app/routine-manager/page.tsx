@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint @typescript-eslint/no-unused-vars: "error" */
+/* eslint-disable */
 'use client';
 import React, { useEffect, useMemo, useState, useRef, useCallback } from "react";
 import { Client, Databases, ID } from "appwrite";
