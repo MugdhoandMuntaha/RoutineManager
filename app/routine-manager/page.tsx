@@ -367,12 +367,12 @@ export default function RoutineManager() {
                 <div className="space-y-6">
                     <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
                         <div>
-                            <div className="flex items-center gap-3">
-                                <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                            <div className="flex items-center gap-3 items-center justify-center">
+                                <h1 className="text-center text-3xl sm:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                                     Routine Manager
                                 </h1>
                             </div>
-                            <p className="text-slate-600 dark:text-slate-400 mt-2">Plan your weekly classes. Modern, sleek and Appwrite-powered.</p>
+                            <p className="text-center text-slate-600 dark:text-slate-400 mt-2">Your smart Routine Manager</p>
                         </div>
                         <button onClick={openModalForCreate} className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl hover:shadow-lg transition font-medium whitespace-nowrap">
                             + Add Routine
@@ -385,7 +385,7 @@ export default function RoutineManager() {
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                             placeholder="Search classes, teacher or code"
-                            className="w-full sm:flex-1 px-4 py-3 border rounded-xl bg-white/80 backdrop-blur text-sm shadow-sm min-w-0"
+                            className="w-full sm:flex-1 px-4 py-3 border rounded-xl bg-gray/80 backdrop-blur text-sm shadow-sm min-w-0"
                         />
                         <div className="flex gap-2">
                             <button onClick={() => setViewMode('overview')} className={`px-4 py-3 rounded-xl text-sm font-medium transition ${viewMode==='overview' ? 'bg-slate-900 text-white shadow-lg' : 'text-slate-700 bg-white hover:bg-slate-50'}`}>
@@ -401,7 +401,7 @@ export default function RoutineManager() {
                 <div className="mt-8">
                     {viewMode === 'overview' ? (
                         <div className="overflow-x-auto -mx-4 px-4 pb-4">
-                            <div className="flex gap-4 min-w-max md:grid md:grid-cols-7 md:min-w-0">
+                            <div className="flex items-center flex-col gap-4 min-w-max md:grid md:grid-cols-7 md:min-w-0">
                                 {DAYS.map((d, i) => (
                                     <div key={d} className="w-72 md:w-auto flex-shrink-0">
                                         <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4 h-full">
